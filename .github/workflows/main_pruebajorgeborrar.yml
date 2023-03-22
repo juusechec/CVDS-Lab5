@@ -26,7 +26,7 @@ jobs:
           java-version: '8'
 
       - name: Build with Maven
-        run: mvn clean install package
+        run: mvn tomcat7:exec-war
 
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v2
